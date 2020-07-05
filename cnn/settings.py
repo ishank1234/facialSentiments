@@ -25,7 +25,12 @@ SECRET_KEY = 's@57h9+an!_=my$4y8nry&*xtw18-l(6c!1i@pu5el)gn_1lym'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
+
+CORS_ORIGIN_WHITELIST=[
+    'sentiment1424.herokuapp.com',
+    '127.0.0.1',
+]
 
 
 # Application definition
@@ -41,6 +46,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
