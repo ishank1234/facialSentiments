@@ -7,4 +7,4 @@ Keras-Preprocessing==1.1.2
 numpy==1.19.0
 opencv-python==4.2.0.34
 tflite==1.14.0
-
+whitenoise
