@@ -12,6 +12,9 @@ whitenoise==5.0.1
 gunicorn==20.0.4
 joblib==0.14.1
 django-cors-headers==3.2.1
+tesseract-ocr
+tesseract-ocr-all
 libsm6
-libxext6
-libxrender-dev
+libxrender1
+libfontconfig1
+libice6
