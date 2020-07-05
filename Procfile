@@ -1,1 +1,1 @@
-web: gunicorn angularProject.wsgi --log-file -
+web: gunicorn cnn.wsgi --log-file -
